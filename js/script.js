@@ -97,12 +97,31 @@ window.addEventListener("DOMContentLoaded", (event) => {
     const err_mail = document.querySelector(".input__error-mail");
 
     if (name.value === "") {
+      name.style.borderColor = 'red';
       err_name.textContent = "Вы не ввели ничего";
       return;
     } else {
-      showThanksModal(message.success);
+      name.style.borderColor = 'green';
+     
     }
-    //showThanksModal(message.success);
+    showThanksModal(message.success);
+    const EMAIL_REGEXP = /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+const email = document.querySelector('.mail');
+
+function isEmailValid(value) {
+ 	return EMAIL_REGEXP.test(value);
+}
+
+function onInput() {
+	if (isEmailValid(email.value)) {
+		email.style.borderColor = 'green';
+	} else {
+		email.style.borderColor = 'red';
+    err_name.textContent = "Ошибка";
+	}
+}
+email.addEventListener('.mail', onInput);
+
     form.reset();
 
     // const request = new XMLHttpRequest();
@@ -129,6 +148,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
     //     }
     // });
   });
+
+
+
+
 
   function showThanksModal(message) {
     const prevModalDialog = document.querySelector(".modal__dialog");
@@ -177,51 +200,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
     })
   );
 });
-
-const form = document.forms["form"];
-const formArr = Array.from(form);
-const validFormArr = [];
-const button = form.elements["button"];
-
-formArr.forEach((el) => {
-  if (el.hasAttribute("data-reg")) {
-    el.setAttribute("is-valid", "0");
-    validFormArr.push(el);
-  }
-});
-
-form.addEventListener("input", inputHandler);
-button.addEventListener("click", buttonHandler);
-
-function inputHandler({ target }) {
-  if (target.hasAttribute("data-reg")) {
-    inputCheck(target);
-  }
-}
-
-function inputCheck(el) {
-  const inputValue = el.value;
-  const inputReg = el.getAttribute("data-reg");
-  const reg = new RegExp(inputReg);
-  if (reg.test(inputValue)) {
-    el.setAttribute("is-valid", "1");
-    el.style.border = "2px solid rgb(0, 196, 0)";
-  } else {
-    el.setAttribute("is-valid", "0");
-    el.style.border = "2px solid rgb(255, 0, 0)";
-  }
-}
-
-function buttonHandler(e) {
-  const allValid = [];
-  validFormArr.forEach((el) => {
-    allValid.push(el.getAttribute("is-valid"));
-  });
-  const isAllValid = allValid.reduce((acc, current) => {
-    return acc && current;
-  });
-
-  if (!Boolean(Number(isAllValid))) {
-    e.preventDefault();
-  }
-}
