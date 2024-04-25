@@ -1,0 +1,122 @@
+
+.news {
+
+    .news-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 9px;
+        transition: box-shadow .3s linear;
+        transition: box-shadow .3s linear, -webkit-box-shadow .3s linear;
+        background-color: #F6F4F9;
+
+        &:hover {
+            -webkit-box-shadow: 4px 4px 30px rgb(0 0 0/10%);
+            box-shadow: 4px 4px 30px rgb(0 0 0/10%)
+        }
+
+        &__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 13px;
+            border-top: 2px solid #EAE8EC;
+            padding-top: 20px;
+            margin-top: 36px;
+
+        }
+
+        &__bottom-date {
+            position: relative;
+            padding-left: 26px;
+            font-size: 15px;
+            line-height: 16px;
+            color: #c4c4c4;
+            font-family: $commons-medium;
+
+            &:before {
+                content: url(/img/icons/calendar.svg);
+                position: absolute;
+                right: 10px;
+                top: -2px;
+                left: 0;
+                width: 16px;
+                height: 16px;
+
+            }
+        }
+
+
+        &__content {
+            padding: 28px 22px 22px 22px;
+        }
+
+        &__link {
+            font-size: 22px;
+            font-family: $commons-demibold;
+            color: $color-black;
+            margin-bottom: 20px;
+
+            &:before {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                content: "";
+            }
+        }
+
+        &__text {
+            font-size: 16px;
+            font-family: $pragmatica-book;
+            line-height: 150%;
+            color: $color-grey
+        }
+    }
+
+
+    .swiper {
+        .swiper-button-prev {
+            position: absolute;
+            padding: 10px;
+            @include adaptiv-value("width", 43, 20, 0);
+            @include adaptiv-value("height", 43, 20, 0);
+            margin: 0;
+            border-radius: 50%;
+            background: #fff;
+            border: none;
+            -webkit-box-shadow: 0 0 15px rgba(173, 121, 225, .17);
+            box-shadow: 0 0 15px rgba(173, 121, 225, .17);
+            left: -15px;
+            transition: color 300ms;
+            cursor: pointer;
+
+
+
+        }
+
+        .swiper-button-next {
+            position: absolute;
+            padding: 10px;
+            @include adaptiv-value("width", 43, 20, 0);
+            @include adaptiv-value("height", 43, 20, 0);
+            right: -15px;
+            margin: 0;
+            border-radius: 50%;
+            background: #fff;
+            border: none;
+            -webkit-box-shadow: 0 0 15px rgba(173, 121, 225, .17);
+            box-shadow: 0 0 15px rgba(173, 121, 225, .17);
+
+            transition: color 300ms;
+            cursor: pointer;
+
+        }
+
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            content: none;
+        }
+
+    }
+}

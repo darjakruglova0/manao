@@ -1,0 +1,52 @@
+.about {
+
+&__foto{
+    flex: 0 1 49%;
+}
+    &__descr{
+        flex: 0 1 49%;
+    }
+&__wrapper{
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.title-h2{
+    @include adaptiv-value("margin-bottom", 35,20, 0);
+}
+&__subtitle{
+    font-size:20px;
+  font-family: $pragmatica-medium;
+    margin-bottom: 26px;
+}
+    &__img{
+        display: flex;
+        gap: 2rem;
+        border-radius: 9px;
+        margin-top: 40px;
+        img{
+            flex: 0 1 48%;
+        }   
+    }
+}
+
+
+@media screen and (max-width: 1250px) {
+
+.about__descr {
+    flex: 0 1 43%;
+}
+}
+
+@media screen and (max-width: 560px) {
+    .about__img  {
+       
+        flex-direction: column;
+    }
+    .about__descr {
+        flex: 0 1 100%;
+    }
+    }
