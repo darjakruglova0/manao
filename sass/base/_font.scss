@@ -1,70 +1,71 @@
-
 @font-face {
   font-family: 'TT Commons DemiBold';
   src: url('/fonts/TTCommons-DemiBold.eot');
   src: url('/fonts/TTCommons-DemiBold.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/TTCommons-DemiBold.woff') format('woff'),
-  url('/fonts/TTCommons-DemiBold.ttf') format('truetype');
+    url('/fonts/TTCommons-DemiBold.woff') format('woff'),
+    url('/fonts/TTCommons-DemiBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  }
+}
 
 @font-face {
   font-family: 'TT Commons Bold';
   src: url('/fonts/TTCommons-Bold.eot');
   src: url('/fonts/TTCommons-Bold.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/TTCommons-Bold.woff') format('woff'),
-  url('/fonts/TTCommons-Bold.ttf') format('truetype');
+    url('/fonts/TTCommons-Bold.woff') format('woff'),
+    url('/fonts/TTCommons-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  }
-  @font-face {
-    font-family: 'TT Commons Medium';
-    src: url('/fonts/TTCommons-Medium.eot');
-    src: url('/fonts/TTCommons-Medium.eot?#iefix') format('embedded-opentype'),
+}
+
+@font-face {
+  font-family: 'TT Commons Medium';
+  src: url('/fonts/TTCommons-Medium.eot');
+  src: url('/fonts/TTCommons-Medium.eot?#iefix') format('embedded-opentype'),
     url('/fonts/TTCommons-Medium.woff') format('woff'),
     url('/fonts/TTCommons-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    }
+  font-weight: normal;
+  font-style: normal;
+}
 
-    @font-face {
-      font-family: 'TT Commons Regular';
-      src: url('/fonts/TTCommons-Regular.eot');
-      src: url('/fonts/TTCommons-Regular.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/TTCommons-Regular.woff') format('woff'),
-      url('/fonts/TTCommons-Regular.ttf') format('truetype');
-      font-weight: normal;
-      font-style: normal;
-      }
-  
-  
+@font-face {
+  font-family: 'TT Commons Regular';
+  src: url('/fonts/TTCommons-Regular.eot');
+  src: url('/fonts/TTCommons-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/TTCommons-Regular.woff') format('woff'),
+    url('/fonts/TTCommons-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-          @font-face {
-            font-family: 'Pragmatica';
-            src: local('/fonts/Pragmatica Book'), local('Pragmatica-Book'),
-                url('/fonts/Pragmatica-Book.woff2') format('woff2'),
-                url('/fonts/Pragmatica-Book.woff') format('woff'),
-                url('/fonts/Pragmatica-Book.ttf') format('truetype');
-            font-weight: normal;
-            font-style: normal;
-          }
 
-          @font-face {
-            font-family: 'Pragmatica-medium';
-            src: local('/fonts/Pragmatica Medium'), local('Pragmatica-Medium'),
-                url('/fonts/Pragmatica-Medium.woff2') format('woff2'),
-                url('/fonts/Pragmatica-Medium.woff') format('woff'),
-                url('/fonts/Pragmatica-Medium.ttf') format('truetype');
-            font-weight: 500;
-            font-style: normal;
-          }
-          @font-face {
-            font-family: 'Pragmatica-light';
-            src: local('/fonts/Pragmatica Light'), local('Pragmatica-Light'),
-                url('/fonts/Pragmatica-Light.woff2') format('woff2'),
-                url('/fonts/Pragmatica-Light.woff') format('woff'),
-                url('/fonts/Pragmatica-Light.ttf') format('truetype');
-            font-weight: 300;
-            font-style: normal;
-          }
+
+@font-face {
+  font-family: 'Pragmatica';
+  src: local('/fonts/Pragmatica Book'), local('Pragmatica-Book'),
+    url('/fonts/Pragmatica-Book.woff2') format('woff2'),
+    url('/fonts/Pragmatica-Book.woff') format('woff'),
+    url('/fonts/Pragmatica-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pragmatica-medium';
+  src: local('/fonts/Pragmatica Medium'), local('Pragmatica-Medium'),
+    url('/fonts/Pragmatica-Medium.woff2') format('woff2'),
+    url('/fonts/Pragmatica-Medium.woff') format('woff'),
+    url('/fonts/Pragmatica-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pragmatica-light';
+  src: local('/fonts/Pragmatica Light'), local('Pragmatica-Light'),
+    url('/fonts/Pragmatica-Light.woff2') format('woff2'),
+    url('/fonts/Pragmatica-Light.woff') format('woff'),
+    url('/fonts/Pragmatica-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}

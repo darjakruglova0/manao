@@ -1,8 +1,7 @@
-
 @import 'base/font';
 @import 'base/mixins';
 @import 'base/veriable';
-@import 'base/normalize'; 
+@import 'base/normalize';
 @import 'blocks/header';
 @import 'blocks/footer';
 @import 'blocks/modal';
@@ -10,82 +9,96 @@
 @import 'blocks/about';
 @import 'blocks/services';
 @import 'blocks/news';
-a:hover{
+
+a:hover {
     color: $color-fiolet;
     transition: 0.5s;
-  }
-img{
+}
+
+img {
     width: 100%;
 
 }
-body{
+
+body {
     font-family: $pragmatica-light;
     color: $color-black;
     font-size: 16px;
 }
+
 * {
     font-display: swap;
-    margin: 0;  
+    margin: 0;
 }
+
 .container {
     max-width: 1170px;
-   margin: 0 auto;
-   padding: 0 15px;
+    margin: 0 auto;
+    padding: 0 15px;
 
 }
 
-.section{
-     @include adaptiv-value("padding-top", 100, 40, 0);
-     @include adaptiv-value("padding-bottom", 100, 40, 0);
+.section {
+    @include adaptiv-value("padding-top", 100, 40, 0);
+    @include adaptiv-value("padding-bottom", 100, 40, 0);
 }
 
-.btn{
+.btn {
     display: inline-block;
     font-family: $commons-demibold;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    background:$color-gradient;
-cursor: pointer;
+    background: $color-gradient;
+    cursor: pointer;
     color: $color-white;
-    border-radius:90px;
-    -webkit-border-radius:90px;
-    -moz-border-radius:90px;
-    -ms-border-radius:90px;
-    -o-border-radius:90px;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -ms-border-radius: 90px;
+    -o-border-radius: 90px;
     @include adaptiv-value("font-size", 16, 13, 0);
     padding: 22px 43px;
-    border:2px solid transparent;
+    border: 2px solid transparent;
 
 }
-.btn:hover{
-    background:transparent;
-    border:2px solid #3F0F72 ;
-    color:#fff
-  
+
+.btn:hover {
+    background: transparent;
+    border: 2px solid #3F0F72;
+    color: #fff
 }
-.title-h2{
+
+.title-h2 {
     @include adaptiv-value("font-size", 48, 30, 0);
-    font-family:$commons-bold
+    font-family: $commons-bold
 }
-.title__block{
+
+.title__block {
     @include adaptiv-value("margin-bottom", 50, 30, 0);
     text-align: center;
-   .subtitle{
-@include adaptiv-value("font-size", 18, 15, 0);
-color:$color-grey;
-font-family: $pragmatica-book;
+
+    .subtitle {
+        @include adaptiv-value("font-size", 18, 15, 0);
+        color: $color-grey;
+        font-family: $pragmatica-book;
     }
 }
 
-.hide{
+.hide {
     display: none;
 }
-.show{
+
+.show {
     display: block;
 }
 
 @media screen and (max-width: 560px) {
-.btn{
-padding: 15px 20px;
-}
+    .btn {
+        padding: 15px 20px;
+    }
+
+    .btn.btn__form {
+
+        padding: 15px 20px;
+    }
 }

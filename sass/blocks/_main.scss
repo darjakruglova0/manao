@@ -1,64 +1,67 @@
 .main {
   background: url(/img/main-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+
   .h1 {
     @include adaptiv-value("font-size", 64, 30, 0);
     line-height: 1em;
-    font-family:$commons-bold;
-    color:$color-white;
+    font-family: $commons-bold;
+    color: $color-white;
     margin-bottom: 40px;
   }
-  &__content {
-  max-width: 794px;
 
-  @include adaptiv-value("padding-top", 90, 60, 0);
+  &__content {
+    max-width: 794px;
+
+    @include adaptiv-value("padding-top", 90, 60, 0);
 
   }
- 
+
   &__text {
     @include adaptiv-value("font-size", 18, 15, 0);
-color:$color-fiolet;
-font-family: $pragmatica-book;
-margin-bottom: 25px;
-letter-spacing: 0.02em;
+    color: $color-fiolet;
+    font-family: $pragmatica-book;
+    margin-bottom: 25px;
+    letter-spacing: 0.02em;
   }
+
   &__img {
     @include adaptiv-value("width", 455, 140, 0);
-   
-  }
-  // .main__wrapper
-  &__wrapper {
 
-    
-      
-   
   }
+
+  // .main__wrapper
+  &__wrapper {}
+
   .main__partners {
     display: flex;
     gap: 2rem;
-    align-items:center;
+    align-items: center;
     max-width: 323px;
 
- bottom: 3%;
- right: 0;
- margin-left: auto;
-    &-title{
-      color:$color-white;
+    bottom: 3%;
+    right: 0;
+    margin-left: auto;
+
+    &-title {
+      color: $color-white;
       font-family: $commons-medium;
       font-size: 17px;
 
     }
-    img{
+
+    img {
       max-width: 100px;
     }
   }
-  
+
 }
-.partners{
+
+.partners {
   bottom: 5%;
   position: absolute;
   right: 2%;
