@@ -7,7 +7,7 @@
   @include adaptiv-value("padding-top", 50, 30, 0);
   @include adaptiv-value("padding-bottom", 40, 20, 0);
 
-  background: url(/img/footer-bg.jpg) 0 0 no-repeat;
+  background: url(../img/footer-bg.jpg) 0 0 no-repeat;
   background-size: cover;
 
   &__wrapper {

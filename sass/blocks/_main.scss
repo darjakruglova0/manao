@@ -1,5 +1,5 @@
 .main {
-  background: url(/img/main-bg.jpg);
+  background: url(../img/main-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -34,8 +34,6 @@
 
   }
 
-  // .main__wrapper
-  &__wrapper {}
 
   .main__partners {
     display: flex;
